@@ -4,6 +4,7 @@
 
 .navbar li {
     display: inline-block;
+    height: 55px;
 }
 
 li a {
@@ -18,9 +19,18 @@ header a:hover{
     color: var(--nonblack);
 }
 
+.logo {
+    padding: 10px;
+    height: 35px;
+}
+
+.logo:hover {
+    background-color: black;
+    filter: invert(90%);
+}
+
 #bars{
     display: none;
-    opacity: 0;
 }
 
 body{
@@ -54,32 +64,42 @@ body{
     margin-top: 20px;
     height: 200px;
     flex-grow: 0.9;
+    border: 2px solid var(--nonblack);
 }
 
 main{
     margin-left: 80px;
 }
 
-#gallery{
+.imageGalleries{
     padding: 10px;
     padding-bottom: 60px;
+    border: 2px solid var(--nonblack);
 }
 
-#gallery img{
+.imageGalleries img{
     width: 100px;
     z-index: 1000;
-    padding-top: 40px;
+/*    padding-top: 40px;*/
     margin: 30px;
-    margin-bottom: 0;
+    margin-top: 10px;
+    border: 2px solid var(--nonblack);
 }
 
-#gallery img:hover{
+.imageGalleries img:hover{
     transform: scale(3);
     position: relative;
 }
 
-#gallery figcaption{
-    max-width: 100px;
-    position: absolute;
+.imageGalleries figcaption{
+    width: 100px;
     margin-left: 30px;
+}
+
+#games img{
+    width: 200px;
+}
+
+#games figcaption{
+    width: 200px;
 }
