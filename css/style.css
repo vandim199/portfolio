@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("style-desktop.css") screen and (min-device-width: 769px) and (min-width: 769px);
+@import url("style-phone.css") screen and (max-device-width: 768px);
+@import url("style-phone.css") screen and (max-width: 768px);
+
+:root {
+    --offwhite: #EDEDED;
+    --nonblack: #292727;
+    --bgColor: #D7C6B7;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway';
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: var(--nonblack);
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    border: 1.5px solid var(--nonblack);
+    background-color: var(--bgColor);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--nonblack);
+    border-radius: 10px;
+}
+
+body{
+    background-color: var(--bgColor);
+    background-image: url("../images/UI/Background-Image.png");
+    background-size: 100vh;
+    background-repeat: repeat;
+}
+
+main {
+    margin-top: 55px;
+}
+
+.navbar {
+    background-color: var(--nonblack);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding: 10px;
+    height: 35px;
+}
+.logo:hover {
+    background-color: black;
+    filter: invert(90%);
+}
+
+#bars{
+    height: 35px;
+    padding: 10px;
+}
+
+#bars:hover{
+background-color: black;
+    filter: invert(90%);
+}
+
+.grid {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#about{
+    position: relative;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    border: 2px solid var(--nonblack);
+}
+
+#about>*{
+    padding: 10px;
+}
+
+section{
+    color: var(--nonblack);
+}
+
+#gallery{
+    margin-top: 10px;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    border: 2px solid var(--nonblack);
+}
+
+#gallery li{
+    display: inline-block;
+/*    width: 100px;*/
+/*    height: 100px;*/
+}
+
+#gallery img{
+    transform-origin: center;
+    transition: all .2s ease-in-out;
+}
+
+#gallery figcaption{
+    text-align: center;
+}
