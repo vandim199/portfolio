@@ -10,7 +10,7 @@ function loaded(){
     document.getElementById("aboutButton").onclick = function() {scrollToAbout()};
 }
 function hamburgerMenu() {
-    if(window.matchMedia('screen and (max-width: 768px)').matches)
+    if(window.matchMedia('screen and (max-device-width: 768px)').matches || window.matchMedia('screen and (max-width: 768px)').matches)
     {
         var x = document.getElementById("navigation");
         if (x.style.display === "block") {
@@ -22,7 +22,10 @@ function hamburgerMenu() {
 }
 
 function scrollToAbout() {
-//    var elmnt = document.getElementById("about");
-//    elmnt.scrollIntoView();
     document.documentElement.scrollTop = 0;
+}
+
+function scrollToLogoGallery() {
+    var elmnt = document.getElementById("gallery");
+    elmnt.scrollIntoView();
 }

@@ -2,10 +2,6 @@
     display: block;
 }
 
-.navbar{
-    align-content: center;
-}
-
 .navbar li {
     display: inline-block;
 }

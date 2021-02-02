@@ -3,11 +3,8 @@ main{
 }
 
 .list {
-/*    justify-content: center;*/
-/*    margin-top: -4px;*/
     position: fixed;
     top: 55px;
-/*    text-align: center;*/
     width: 100vw;
     display: none;
 }
