@@ -76,9 +76,9 @@ main {
     border-radius: 20px;
 }
 
-.imageGalleries>*{
+/* .imageGalleries>*{
 /*    padding: 10px;*/
-}
+/* } */
 
 .imageGalleries li{
     display: inline-block;
