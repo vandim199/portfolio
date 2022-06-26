@@ -7,39 +7,67 @@
     --offwhite: #EDEDED;
     --nonblack: #292727;
     --bgColor: #D7C6B7;
+
+    --nonblack: #1d3557;
+    --bgColor: #f1faee;
+    --offwhite: white;
+    --red: #e63946;
 }
 
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway';
+    font-size: 2vh;
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 3vh;
+}
+
+p
+{
+    font-size: 2vh;
+    text-align: center;
 }
 
 ::-webkit-scrollbar{
     width: 15px;
-    background-color: var(--nonblack);
+    display: none;
+    /* background-color: rgba(0,0,0,0); */
 }
 
 ::-webkit-scrollbar-track{
     border-radius: 10px;
-    border: 1.5px solid var(--nonblack);
+    /* border: 1.5px solid var(--nonblack); */
     background-color: var(--bgColor);
+    /* display: none; */
+    background-color: rgba(0,0,0,0);
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--nonblack);
     border-radius: 10px;
+    height: 10px;
+    display: none;
 }
 
 body{
     background-color: var(--bgColor);
-    background-image: url("../images/UI/Background-Image.png");
+    /* background-image: url("../images/UI/Background-Image.png"); */
     background-size: 100vh;
     background-repeat: repeat;
 }
 
 main {
-    margin-top: 55px;
+    margin-top: 7vh;
+    /* width: 100%; */
+    float: right;
+    width: calc(100% - 60px);
+    display: flex;
 }
 
 .navbar {
@@ -50,51 +78,180 @@ main {
     z-index: 100;
     display: flex;
     justify-content: space-between;
+    /* height: 7vh; */
 }
 
-.grid {
+a:link
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active
+{
+    text-decoration: none;
+}
+
+/* .grid {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
+} */
 
-#about{
+#contentContainer
+{
+    margin: 20px;
+    width: 80%;
+    /* margin-top: 20px; */
     position: relative;
-    background-color: var(--bgColor);
-    border-radius: 20px;
+    height: calc(90vh - 40px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
-#about>*{
+/* #about>*{
     padding: 10px;
-}
+} */
 
-.imageGalleries{
+section{
+    padding: 20px;
+    width: 96%;
+    width: 70vw;
+    scroll-snap-align: start;
     color: var(--nonblack);
     margin-top: 10px;
     background-color: var(--bgColor);
     border-radius: 20px;
+    /* border: 2px solid var(--nonblack); */
 }
 
-/* .imageGalleries>*{
-/*    padding: 10px;*/
-/* } */
+section ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .imageGalleries li{
+    align-self: flex-end;
     display: inline-block;
     justify-content: space-between;
+    width: 10%;
+    height: 10%;
+    margin: 20px;
+    margin-bottom: 0;
 }
 
 .imageGalleries img{
     transform-origin: center;
     transition: all .2s ease-in-out;
     border-radius: 10px;
+    cursor: pointer;
+    width: 15vh;
+    height: 15vh;
+    display: block;
 }
 
 .imageGalleries figcaption{
+    font-size: 2vh;
     text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+iframe
+{
+    width: 30vh;
+    height: auto;
 }
 
 h2{
     color: var(--nonblack);
+}
+
+#contactForm
+{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    left: 0;
+    right: 0;
+}
+
+input, textarea
+{
+    border: 0;
+    resize: vertical;
+    background-color: var(--offwhite);
+    width: 98%;
+    border: 2px solid var(--nonblack);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.inputs
+{
+    /* width: 100%; */
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#contactForm button
+{
+    width: 100%;
+    background-color: var(--nonblack);
+    color: var(--offwhite);
+    border-radius: 20px;
+    border: 0;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+#fullImgBox
+{
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#fullImg
+{
+    width: 90%;
+    max-width: 800px;
+}
+
+#fullImgBox span
+{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 40px;
+    color: var(--offwhite);
+    cursor: pointer;
+}
+
+h2
+{
+    color: var(--red);
 }

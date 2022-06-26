@@ -4,14 +4,15 @@
 
 .navbar li {
     display: inline-block;
-    height: 55px;
+    /* height: 55px; */
 }
 
-li a {
+.navbar li a {
     display: block;
     color: var(--offwhite);
     font-size: 30px;
-    padding: 10px;
+    padding: 12px;
+    height: 100%;
 }
 
 header a:hover{
@@ -33,12 +34,9 @@ header a:hover{
     display: none;
 }
 
-body{
-    display: flex;
-}
 
 .social{
-    margin-top: 55px; 
+    top: 59px;
     position: fixed;
     height: 100vh;
     background-color: var(--nonblack);
@@ -46,48 +44,65 @@ body{
 
 .social img{
     width: 37px;
-}
-
-.decorations{
-    flex-grow: 0.05;
-    margin: 75px 20px 0;
-}
-
-.decorations img{
-    width: 200px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    border: 2px solid var(--nonblack);
+    padding: 9px;
 }
 
 #about{
+    /* display: flex; */
     margin-top: 20px;
-    height: 200px;
-    flex-grow: 0.9;
-    border: 2px solid var(--nonblack);
+    /* height: 200px; */
+    /* border: 2px solid var(--nonblack); */
 }
+
+#aboutHorizontal
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about p
+{
+    width: 80%;
+}
+
+.decorations{
+    width: 10vw;
+    margin-right: 20px;
+}
+
+.decorations img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* .decorations :last-child
+{
+    border-radius: 0;
+} */
 
 main{
     margin-left: 80px;
 }
 
-.imageGalleries{
-    padding: 10px;
-    padding-bottom: 60px;
-    border: 2px solid var(--nonblack);
+section{
+    padding: 1vh;
+    /* padding-bottom: 60px; */
+    height: 80vh;
 }
 
 .imageGalleries img{
-    width: 100px;
-    z-index: 1000;
-/*    padding-top: 40px;*/
+    z-index: 900;
+   /* padding-top: 40px; */
     margin: 30px;
     margin-top: 10px;
+    margin-bottom: 0;
     border: 2px solid var(--nonblack);
+    object-fit: cover;
 }
 
 .imageGalleries img:hover{
-    transform: scale(3);
+    transform: scale(1.2);
     position: relative;
 }
 
@@ -96,10 +111,51 @@ main{
     margin-left: 30px;
 }
 
-#games img{
+/* #games img{
     width: 200px;
 }
 
 #games figcaption{
     width: 200px;
+} */
+
+#sidelinks
+{
+    margin: auto;
+    margin-right: 4vw;
+    text-decoration: none;
+}
+
+#sidelinks ul
+{
+    list-style: none;
+}
+
+#sidelinks li
+{
+    margin: 2vh;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+    transform: skewX(-25deg);
+}
+
+#sidelinks a
+{
+    text-align: center;
+    padding: 2vh;
+    transform: skewX(25deg);
+    font-size: 3vh;
+    display: block;
+    color: var(--nonblack);
+}
+
+#sidelinks li:hover
+{
+    background-color: var(--red);
+}
+
+#sidelinks a:hover
+{
+    color: var(--offwhite);
 }

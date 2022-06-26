@@ -10,6 +10,9 @@ function loaded(){
     document.getElementById("aboutButton").onclick = function() {scrollToAbout()};
     document.getElementById("galleryButton").onclick = function() {scrollToLogoGallery()};
     document.getElementById("gamesButton").onclick = function() {scrollToGames()};
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
 }
 function hamburgerMenu() {
     var x = document.getElementById("navigation");
@@ -29,7 +32,8 @@ function hamburgerMenu() {
 }
 
 function scrollToAbout() {
-    document.documentElement.scrollTop = 0;
+    var aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView();
 }
 
 function scrollToLogoGallery() {
@@ -40,4 +44,15 @@ function scrollToLogoGallery() {
 function scrollToGames() {
     var gamesSection = document.getElementById("games");
     gamesSection.scrollIntoView();
+}
+
+function openImg(imgSource)
+{
+    fullImg.src = imgSource;
+    fullImgBox.style.display = "flex";
+}
+
+function closeImg()
+{
+    fullImgBox.style.display = "none";
 }

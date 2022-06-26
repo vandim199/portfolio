@@ -52,7 +52,7 @@ main{
     padding: 20px;
 }
 
-aside{
+aside, .decorations{
     display: none;
 }
 
@@ -65,7 +65,7 @@ aside{
     border: 6px solid var(--nonblack);
 }
 
-.imageGalleries{
+section{
     display: block;
     text-align: center;
     padding: 10px;
@@ -83,4 +83,9 @@ aside{
 .imageGalleries figcaption{
     display: block;
     font-size: 5vw;
+}
+
+#sidelinks
+{
+    display: none;
 }
