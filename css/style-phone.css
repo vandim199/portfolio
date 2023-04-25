@@ -65,7 +65,13 @@ aside, .decorations{
     border: 6px solid var(--nonblack);
 }
 
+#contentContainer
+{
+    scroll-snap-type: none;
+}
+
 section{
+    scroll-snap-align: none;
     display: block;
     text-align: center;
     padding: 10px;

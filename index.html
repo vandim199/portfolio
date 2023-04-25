@@ -329,6 +329,52 @@
                 
             </section>
 
+            <section id="ragdolls"  class="imageGalleries">
+                <h2>Active Ragdoll Experimentation</h2>
+                <br>
+                <h3>Personal project</h3>
+                <br>
+                <p>
+                    My goal was to learn about procedural animation by making a ragdoll which can play animations.<br>
+                    My inspirations were Gang Beasts and Human Fall Flat.
+                </p>
+                <br>
+                <p>
+                    <b>• Inverse Kinematics</b> - Using a basic setup I am setting the IK goal's position to where the raycast hits.
+                    <br><b>• Automatic Stepping</b> - After the leg's goal gets too far away from the body I move it to the opposite side and lerp the position with a sine wave.
+                    <br><b>• Ragdoll</b> - The character is set up with a collision and RigidBody on each bone and a configurable joint connecting them all. <br>
+                    The joint also has the spring force enabled to try to adjust the rotation to the default pose.
+                    <br><b>• Copy Animation</b> - By setting the target rotation of the joints to be the same as those of an animated copy of the character, the ragdoll should be copying the desired animations.
+                    <br>
+                    <br>
+                </p>
+                <ul>
+                    
+                    <li>
+                        <figure>
+                            <video width="150" height="150" controls>
+                                <source src="images/Gallery/PP3 InverseKinematics.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <video width="150" height="150" controls>
+                                <source src="images/Gallery/PP3 MotionCopyAir.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <video width="150" height="150" controls>
+                                <source src="images/Gallery/PP3 MotionCopyWalk.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </figure>
+                    </li>
+                </ul>
+                
+            </section>
+
             <section id="games"  class="imageGalleries">
                 <h2>Other Games</h2>
                 <br>
@@ -425,6 +471,7 @@
                     <li><a href="#bleached">Bleached | Roguelike</a></li>
                     <li><a href="#plasticTide">Plastic Tide | Boat Game</a></li>
                     <li><a href="#shaders">Shaders</a></li>
+                    <li><a href="#ragdolls">Active Ragdolls</a></li>
                     <li><a href="#games">Other Games</a></li>
                 </ul>
             </div>
