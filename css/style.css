@@ -171,6 +171,11 @@ section ul
     height: 100%;
 }
 
+#casino li
+{
+    width: 20%;
+}
+
 iframe
 {
     width: 30vh;
