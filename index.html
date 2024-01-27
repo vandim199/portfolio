@@ -5,9 +5,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <script src="scripts/script.js"></script>
+        <script defer src="scripts/script.js"></script>
 
-        <title>Vandim Portfolio</title>
+        <title>Ivan Mitsov Portfolio</title>
 
         <meta name="viewport">
     </head>
@@ -18,8 +18,16 @@
             </a>
             <nav class="list" id="navigation">
                 <ul>
-                    <li id="home"><a href="index.html">Home</a></li>
-                    <li id="contactButton"><a href="contact.html">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#casino">Unreal Engine</a></li>
+                    <li><a href="#car">Car Simulation</a></li>
+                    <li><a href="#2dplatformer"> 2D Platformer</a></li>
+                    <li><a href="#produceabuse">C++ RPG</a></li>
+                    <li><a href="#bleached">Bleached | Roguelike</a></li>
+                    <li><a href="#plasticTide">Plastic Tide | Boat Game</a></li>
+                    <li><a href="#shaders">Shaders</a></li>
+                    <li><a href="#ragdolls">Active Ragdolls</a></li>
+                    <li><a href="#games">Other Games</a></li>
                 </ul>
             </nav>
             <img src="images/UI/Bars.png" id="bars" alt="Bars Menu">
@@ -36,7 +44,7 @@
             <h6 hidden>Social Icons</h6>
             <nav>
                 <ul>
-                    
+
                     <li><a target="_blank" href="https://github.com/vandim199"><img src="images/UI/GitHub.png" alt="GitHub Logo"></a></li>
                     <li><a target="_blank" href="https://twitter.com/Vandim199"><img src="images/UI/Twitter.png" alt="Twitter Logo"></a></li>
                     <li><a target="_blank" href="https://www.youtube.com/channel/UC_P64ARv-GpOj0nUU7OvTtg"><img src="images/UI/Youtube.png" alt="Youtube Logo"></a></li>
@@ -44,11 +52,13 @@
             </nav>
         </aside>
 
-        <main>
+        <!-- <main> -->
             <h6 hidden>Main Page</h6>
 
-            <div id="contentContainer">
+            <!-- <div id="contentContainer"> -->
             <section id="about">
+                <img src="./images/Gallery/2022Pic.jpeg">
+                <br>
                 <h2>About Me</h2>
                 <br>
                 <div id="aboutHorizontal">
@@ -58,12 +68,6 @@
                     Started with drawing, 3D modeling, pixel art, graphic design, but in the end I found that I have a great passion for making games and making them fun. <br>
                     That's why I decided to try to become a gameplay programmer.
                 </p>
-                <div class="decorations">
-                    <h6 hidden>Decoration images</h6>
-                    <img src="images/Gallery/CVPic.png" alt="Personal Photo">
-                    <!-- <br> -->
-                    <!-- <img src="images/Gallery/Golden%20Ratio.png" alt="Golden Ration"> -->
-                </div>
             </div>
             </section>
 
@@ -89,16 +93,16 @@
                     <br>
                 </p>
                 <ul>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>Baccarat</figcaption>
-                            <video width="200" height="150" controls>
+                            <video width="400px" controls>
                             <source src="images/Gallery/videos/Media1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                           </video>
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>Blackjack</figcaption>
                             <video width="200" height="150" controls>
@@ -107,7 +111,7 @@
                           </video>
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>Roulette</figcaption>
                             <video width="200" height="150" controls>
@@ -116,7 +120,7 @@
                           </video>
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>UI and Emote Wheel</figcaption>
                             <video width="200" height="150" controls>
@@ -174,7 +178,7 @@
                             <img src="images/Gallery/EngineCode.png" onclick="openImg(this.src)">
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>Video</figcaption>
                             <video width="150" height="150" controls>
@@ -372,10 +376,10 @@
                             <img src="images/Gallery/water shader 5.gif" onclick="openImg(this.src)">
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <figcaption>Youtube Trailer</figcaption>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_eoKlNaL5Ss" title="YouTube video player" 
+                            <iframe width="560" src="https://www.youtube.com/embed/_eoKlNaL5Ss" title="YouTube video player" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </figure>
                     </li>
@@ -428,7 +432,7 @@
                             <img src="images/Gallery/WaterFoam.png" onclick="openImg(this.src)">
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <video width="150" height="150" controls>
                                 <source src="images/Gallery/Shaders PersonalPortfolio.mp4" type="video/mp4">
@@ -460,21 +464,21 @@
                 </p>
                 <ul>
                     
-                    <li>
+                    <li class="video">
                         <figure>
                             <video width="150" height="150" controls>
                                 <source src="images/Gallery/PP3 InverseKinematics.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <video width="150" height="150" controls>
                                 <source src="images/Gallery/PP3 MotionCopyAir.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                         </figure>
                     </li>
-                    <li>
+                    <li class="video">
                         <figure>
                             <video width="150" height="150" controls>
                                 <source src="images/Gallery/PP3 MotionCopyWalk.mp4" type="video/mp4">
@@ -571,9 +575,9 @@
                     </li>
                 </ul>
             </section> -->
-            </div>
+            <!-- </div> -->
             
-            <div id="sidelinks">
+            <!-- <div id="sidelinks">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#casino">Unreal Engine</a></li>
@@ -586,8 +590,8 @@
                     <li><a href="#ragdolls">Active Ragdolls</a></li>
                     <li><a href="#games">Other Games</a></li>
                 </ul>
-            </div>
-        </main>
+            </div> -->
+        <!-- </main> -->
 
         <!-- <aside> -->
             
