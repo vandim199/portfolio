@@ -36,6 +36,14 @@
 </header>
 
 <body>
+  <div id="blob"></div>
+  <div id="blur"></div>
+
+  <div id="fullImgBox" onclick="closeImg()">
+    <img src="images/Gallery/80s Logo.png" id="fullImg" />
+    <span onclick="closeImg()">X</span>
+  </div>
+
   <aside class="social">
     <h6 hidden>Social Icons</h6>
     <nav>
@@ -61,12 +69,120 @@
     </nav>
   </aside>
 
-  <section class="imageGalleries">
-    <h1>The Chair</h1>
+  <section class="imageGalleries" id="chair">
+    <h2>The Chair</h2>
     <br />
     <p>
       Our team was assigned to create a sitting VR experience which doesn't
-      require controllers.
+      require controllers in Unreal Engine. <br />
+      A variety of concepts were discussed with the team and we settled on a
+      horror experience.<br />
+      When choosing the concepts I was in charge of researching the performance
+      limitations of VR in combination with lumen in order to achieve realistic
+      graphics.<br />
+      <br />
+      <b>Version Control</b> - because of the high filesize of the assets an
+      appropriate solution was needed. After researching I decided to use SVN
+      hosted on the XR lab computer. SVN also has integration in Unreal allowing
+      for easy version control for the artists<br />
+      <br />
+      I setup a scene, added Lumen and all post-processing effects to set the
+      vibe. I also created a shader for the TV to look like an LCD <br />
+    </p>
+    <ul>
+      <li>
+        <figure>
+          <img src="images/Gallery/lumenvr.png" onclick="openImg(this.src)" />
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/Gallery/tvshader.png" onclick="openImg(this.src)" />
+        </figure>
+      </li>
+    </ul>
+    <p>
+      I setup a sequence player in the scene and added functionality for the
+      artists like playing sounds, light flickering, etc. <br />
+      <br />
+      A problem we noticed while testing is that users often missed some of the
+      animations. To fix that I added a script to pause the movie until the
+      player looks in the general direction and optionally unpauses after a few
+      seconds if the user still hasn't looked there. It's easy to use with
+      variables to help the artists as much as possible.<br />
+      I also implemented some quality of life featureslike resetting the level
+      from a button and re-centering the VR view.
+    </p>
+    <ul>
+      <li>
+        <img src="images/Gallery/LookScript.png" onclick="openImg(this.src)" />
+      </li>
+    </ul>
+    <h2>Personal Learning Goals</h2>
+    <p>
+      Since the project wasn't very programming heavy I spent my free time for
+      personal development. <br />
+      A skill I've been looking to acquire was web development. First I needed
+      to learn <b>JavaScript</b> and did exercises.
+    </p>
+    <ul>
+      <li>
+        <img src="images/Gallery/moviedb1.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb2.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb3.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb4.png" onclick="openImg(this.src)" />
+      </li>
+    </ul>
+    <p>
+      After that, I began studying full-stack development, and the project I
+      selected for it was an album website that functions similarly to most
+      e-commerce websites. It would contain pictures, videos, and quotes from my
+      friend group, since we have a lot of funny moments while gaming throughout
+      the years<br />
+      First I had to do research on what are the most useful frameworks to have
+      in my skillset and it became prominent that because of it's popuraity and
+      availability of resources React is the way to go. Along with it I used
+      Vite to improve loading speeds by bundling all of the site contents
+      together and send them to the client with the server. I needed some way to
+      store media and the corelated metadata so I opted for MySQL. To handle the
+      back-end requests I made a node.js server. The front-end of the website
+      sends an API request to the node.js server and it makes a MySQL query to
+      get all items, then it would send them to the front-end and create new
+      React components for each item. I also wanted to implement filtering - to
+      be able to tick a person's name in a checkbox and display all his pictures
+      and videos he partakes in.
+    </p>
+    <ul>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite2.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite3.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+    </ul>
+    <p>
+      This website needed some updating. It didn't work properly on mobile and
+      the design wasn't the best so I spent time learning more about website
+      design and responsive CSS. I still have work to do but I made some good
+      progress.
     </p>
   </section>
 </body>

@@ -49,3 +49,24 @@ const hiddenElements = document.querySelectorAll("section");
 hiddenElements.forEach((el) => {
   observer.observe(el);
 });
+
+let root = document.documentElement;
+
+root.addEventListener("mousemove", (e) => {
+  root.animate({}, { duration: 3000, fill: "forwards" });
+  root.style.setProperty("--mouseX", e.clientX - 250 + "px");
+  root.style.setProperty("--mouseY", e.clientY - 250 + "px");
+});
+
+const blob = document.getElementById("blob");
+
+document.body.onpointermove = (event) => {
+  const { clientX, clientY } = event;
+  blob.animate(
+    {
+      left: clientX + "px",
+      top: clientY + "px",
+    },
+    { duration: 3000, fill: "forwards" }
+  );
+};

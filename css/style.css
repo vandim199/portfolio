@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("style-desktop.css") screen and (min-device-width: 769px) and
   (min-width: 769px);
 @import url("style-phone.css") screen and (max-device-width: 768px);
@@ -17,6 +19,7 @@
   --bgColor: #131316;
   --nonblack: #f3f3f3;
   --offwhite: #f3f3f3;
+  --accentColor: #bced09;
 }
 
 * {
@@ -70,7 +73,7 @@ main {
 }
 
 .navbar {
-  background-color: var(--bgColor);
+  /* background-color: var(--bgColor); */
   position: fixed;
   top: 0;
   width: 100%;
@@ -262,8 +265,11 @@ iframe {
 
 h2 {
   text-align: center;
-  font-size: 34px;
-  color: var(--red);
+  font-size: 38px;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-style: italic;
 }
 
 video {
@@ -305,6 +311,12 @@ iframe {
   /* margin: auto; */
 }
 
+p > a {
+  color: var(--accentColor);
+  font-size: 3.5vh;
+  text-decoration: underline !important;
+}
+
 /*          Scroll Animations          */
 /* section {
   opacity: 0;
@@ -319,3 +331,58 @@ iframe {
   transform: translateX(0);
   transform: scale(100%);
 } */
+
+#blur {
+  top: 0;
+  height: 99.9%;
+  width: 100%;
+  position: fixed;
+  z-index: -4;
+  backdrop-filter: blur(200px);
+}
+
+#blob {
+  background-color: white;
+  width: 500px;
+  aspect-ratio: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  border-radius: 50%;
+  z-index: -5;
+
+  background: linear-gradient(to right, red, purple);
+
+  animation: rotate 20s infinite;
+
+  /* transition-duration: 200ms; */
+  /* transition-timing-function: ease-in; */
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+#chair * {
+  font-family: "Open Sans";
+}
+
+#chair h2 {
+  padding: 40px;
+}
+
+#chair > p {
+  width: 90%;
+  text-align: left;
+  font-size: 18px;
+}
