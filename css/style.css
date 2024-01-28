@@ -386,3 +386,17 @@ p > a {
   text-align: left;
   font-size: 18px;
 }
+
+table {
+  margin: 20px;
+  border: 2px white solid;
+  background-color: none;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: white 2px solid;
+  border-collapse: collapse;
+  padding: 20px;
+}
