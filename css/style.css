@@ -335,7 +335,7 @@ p > a {
 #blur {
   top: 0;
   height: 99.9%;
-  width: 100%;
+  width: 99.9%;
   position: fixed;
   z-index: -4;
   backdrop-filter: blur(200px);
