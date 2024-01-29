@@ -151,8 +151,27 @@ a:active {
 #about > img {
   max-height: 200px;
   border-radius: 50%;
-  border: white 3px solid;
+  /* border: white 3px solid; */
   margin: 20px;
+}
+
+@keyframes bopvertical {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+#about > #arrow {
+  width: 50px;
+  height: auto;
+  border-radius: 0%;
+  animation: bopvertical 5s infinite;
 }
 
 section {
@@ -318,7 +337,7 @@ p > a {
 }
 
 /*          Scroll Animations          */
-/* section {
+section {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -330,7 +349,7 @@ p > a {
   filter: blur(0);
   transform: translateX(0);
   transform: scale(100%);
-} */
+}
 
 #blur {
   top: 0;
