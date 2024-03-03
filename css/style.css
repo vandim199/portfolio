@@ -180,7 +180,7 @@ section {
   place-items: center;
   align-content: center;
   padding: 20px;
-  max-width: 90vw;
+  max-width: 1600px;
   /* width: 70vw; */
   /* scroll-snap-align: start; */
   color: var(--nonblack);
@@ -403,19 +403,9 @@ section {
 #chair > p {
   width: 90%;
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-table {
-  margin: 20px;
-  border: 2px white solid;
-  background-color: none;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: white 2px solid;
-  border-collapse: collapse;
-  padding: 20px;
+#chair a {
+  font-size: 20px;
 }

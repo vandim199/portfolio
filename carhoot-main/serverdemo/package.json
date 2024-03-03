@@ -1,0 +1,21 @@
+{
+  "name": "serverdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "something.js",
+  "scripts": {
+    "test": "something"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "borf"
+  ],
+  "author": "Kalin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
