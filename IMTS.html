@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/UI/Logo.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script defer src="scripts/script.js"></script>
+
+    <title>Ivan Mitsov Portfolio</title>
+
+    <meta name="viewport" />
+  </head>
+</html>
+
+<header class="navbar">
+  <a href="index.html">
+    <img src="images/UI/Logo.ico" class="logo" id="logo" alt="Logo" />
+  </a>
+  <nav class="list" id="navigation">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#casino">Unreal Engine</a></li>
+      <li><a href="index.html#car">Car Simulation</a></li>
+      <li><a href="index.html#thechair">The Chair</a></li>
+      <li><a href="index.html#2dplatformer"> 2D Platformer</a></li>
+      <li><a href="index.html#produceabuse">C++ RPG</a></li>
+      <li><a href="index.html#bleached">Bleached | Roguelike</a></li>
+      <li><a href="index.html#plasticTide">Plastic Tide | Boat Game</a></li>
+      <li><a href="index.html#shaders">Shaders</a></li>
+      <li><a href="index.html#ragdolls">Active Ragdolls</a></li>
+      <li><a href="index.html#games">Other Games</a></li>
+      <li><a href="IMTS.html">IMT&S Blog</a></li>
+    </ul>
+  </nav>
+  <img src="images/UI/Bars.png" id="bars" alt="Bars Menu" />
+</header>
+
+<body>
+  <div id="blob"></div>
+  <div id="blur"></div>
+
+  <div id="fullImgBox" onclick="closeImg()">
+    <img src="images/Gallery/80s Logo.png" id="fullImg" />
+    <span onclick="closeImg()">X</span>
+  </div>
+
+  <aside class="social">
+    <h6 hidden>Social Icons</h6>
+    <nav>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/vandim199"
+            ><img src="images/UI/GitHub.png" alt="GitHub Logo"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/Vandim199"
+            ><img src="images/UI/Twitter.png" alt="Twitter Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ivan-mitsov-b3a715201/"
+            ><img src="images/UI/linkedin-logo.png" alt="LinkedIn Logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="imageGalleries" id="chair">
+    <h2>The Chair</h2>
+    <br />
+    <li class="video">
+      <figure>
+      <video width="200" height="150" controls>
+      <source src="images/Gallery/videos/Trailer_TheChair.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </figure>
+ </li>
+    <p>
+      Our team was assigned to create a sitting VR experience which doesn't
+      require controllers in Unreal Engine. <br />
+      A variety of concepts were discussed with the team and we settled on a
+      horror experience.<br />
+      When choosing the concepts I was in charge of researching the performance
+      limitations of VR in combination with lumen in order to achieve realistic
+      graphics.<br />
+      <br />
+      <b>Version Control</b> - because of the high filesize of the assets an
+      appropriate solution was needed. After researching I decided to use SVN
+      hosted on the XR lab computer. SVN also has integration in Unreal allowing
+      for easy version control for the artists<br />
+      <br />
+      I setup a scene, added Lumen and all post-processing effects to set the
+      vibe. I also created a shader for the TV to look like an LCD <br />
+    </p>
+    <ul>
+      <li>
+        <figure>
+          <img src="images/Gallery/lumenvr.png" onclick="openImg(this.src)" />
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/Gallery/tvshader.png" onclick="openImg(this.src)" />
+        </figure>
+      </li>
+    </ul>
+    <p>
+      I setup a sequence player in the scene and added functionality for the
+      artists like playing sounds, light flickering, etc. <br />
+      <br />
+      A problem we noticed while testing is that users often missed some of the
+      animations. To fix that I added a script to pause the movie until the
+      player looks in the general direction and optionally unpauses after a few
+      seconds if the user still hasn't looked there. It's easy to use with
+      variables to help the artists as much as possible.<br />
+      I also implemented some quality of life featureslike resetting the level
+      from a button and re-centering the VR view.
+    </p>
+    <ul>
+      <li>
+        <img src="images/Gallery/LookScript.png" onclick="openImg(this.src)" />
+      </li>
+    </ul>
+    <h2>Cost Calculation</h2>
+    <p>
+      The average junior game programmer's salary in The Netherlands is 54 456€
+      so based on that we can calculate that the hourly rate is 28.36€ so for the
+      duration of the project it would have cost 22 690€.
+    </p>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Month</th>
+        <th>Hour</th>
+      </tr>
+      <tr>
+        <td>54 456€</td>
+        <td>4 538€</td>
+        <td>28.36€</td>
+      </tr>
+    </table> 
+    <h2>Personal Learning Goals</h2>
+    <p>
+      Since the project wasn't very programming heavy I spent my free time for
+      personal development. <br />
+      A skill I've been looking to acquire was web development. First I needed
+      to learn <b>JavaScript</b> and did exercises.
+    </p>
+    <ul>
+      <li>
+        <img src="images/Gallery/moviedb1.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb2.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb3.png" onclick="openImg(this.src)" />
+      </li>
+      <li>
+        <img src="images/Gallery/moviedb4.png" onclick="openImg(this.src)" />
+      </li>
+    </ul>
+    <p>
+      After that, I began studying full-stack development, and the project I
+      selected for it was an album website that functions similarly to most
+      e-commerce websites. It would contain pictures, videos, and quotes from my
+      friend group, since we have a lot of funny moments while gaming throughout
+      the years<br />
+      First I had to do research on what are the most useful frameworks to have
+      in my skillset and it became prominent that because of it's popuraity and
+      availability of resources React is the way to go. Along with it I used
+      Vite to improve loading speeds by bundling all of the site contents
+      together and send them to the client with the server. I needed some way to
+      store media and the corelated metadata so I opted for MySQL. To handle the
+      back-end requests I made a node.js server. The front-end of the website
+      sends an API request to the node.js server and it makes a MySQL query to
+      get all items, then it would send them to the front-end and create new
+      React components for each item. I also wanted to implement filtering - to
+      be able to tick a person's name in a checkbox and display all his pictures
+      and videos he partakes in.
+    </p>
+    <ul>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite2.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+      <li>
+        <img
+          src="images/Gallery/albumwebsite3.png"
+          onclick="openImg(this.src)"
+        />
+      </li>
+    </ul>
+    <p>
+      This website needed some updating. It didn't work properly on mobile and
+      the design wasn't the best so I spent time learning more about website
+      design and responsive CSS. I still have work to do but I made some good
+      progress. I also got my own domain and I will make it show up in google searches.
+    </p>
+    <ul>
+      <li>
+        <li class="video">
+          <figure>
+              <figcaption>Old UI</figcaption>
+              <video width="200" height="150" controls>
+              <source src="images/Gallery/videos/oldWebsite.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+          <figure>
+            <figcaption>New UI</figcaption>
+            <video width="200" height="150" controls>
+            <source src="images/Gallery/videos/newWebsite.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </figure>
+      </li>
+      </li>
+    </ul>
+  </section>
+</body>

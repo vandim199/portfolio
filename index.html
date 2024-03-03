@@ -1,529 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="icon" href="images/UI/Logo.ico">
+  <head>
+    <link rel="icon" href="images/UI/Logo.ico" />
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-        <script src="scripts/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 
-        <title>Vandim Portfolio</title>
+    <title>Ivan Mitsov Portfolio</title>
 
-        <meta name="viewport">
-    </head>
-    
-    <header class="navbar">
-            <a href="index.html">
-                <img src="images/UI/Logo.ico" class="logo" id="logo" alt="Logo">
-            </a>
-            <nav class="list" id="navigation">
-                <ul>
-                    <li id="home"><a href="index.html">Home</a></li>
-                    <li id="contactButton"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="images/UI/Bars.png" id="bars" alt="Bars Menu">
-        </header>
+    <meta name="viewport" />
+  </head>
 
-    <body>
-        <div id="fullImgBox" onclick="closeImg()">
-            <img src="images/Gallery/80s Logo.png" id="fullImg">
-            <span onclick="closeImg()">X</span>
-        </div>
-        
+  <header class="navbar">
+    <a href="index.html">
+      <img src="images/UI/Logo.ico" class="logo" id="logo" alt="Logo" />
+    </a>
+    <nav class="list" id="navigation">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#casino">Unreal Engine</a></li>
+        <li><a href="index.html#car">Car Simulation</a></li>
+        <li><a href="index.html#thechair">The Chair</a></li>
+        <li><a href="index.html#2dplatformer"> 2D Platformer</a></li>
+        <li><a href="index.html#produceabuse">C++ RPG</a></li>
+        <li><a href="index.html#bleached">Bleached | Roguelike</a></li>
+        <li><a href="index.html#plasticTide">Plastic Tide | Boat Game</a></li>
+        <li><a href="index.html#shaders">Shaders</a></li>
+        <li><a href="index.html#ragdolls">Active Ragdolls</a></li>
+        <li><a href="index.html#games">Other Games</a></li>
+        <li><a href="IMTS.html">IMT&S Blog</a></li>
+      </ul>
+    </nav>
+    <img src="images/UI/Bars.png" id="bars" alt="Bars Menu" />
+  </header>
 
-        <aside class="social">
-            <h6 hidden>Social Icons</h6>
-            <nav>
-                <ul>
-                    <li><a target="_blank" href="https://github.com/vandim199"><img src="images/UI/GitHub.png" alt="GitHub Logo"></a></li>
-                    <li><a target="_blank" href="https://twitter.com/Vandim199"><img src="images/UI/Twitter.png" alt="Twitter Logo"></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UC_P64ARv-GpOj0nUU7OvTtg"><img src="images/UI/Youtube.png" alt="Youtube Logo"></a></li>
-                </ul>
-            </nav>
-        </aside>
+  <body>
+    <div id="blob"></div>
+    <div id="blur"></div>
 
-        <main>
-            <h6 hidden>Main Page</h6>
+    <div id="fullImgBox" onclick="closeImg()">
+      <img src="images/Gallery/80s Logo.png" id="fullImg" />
+      <span onclick="closeImg()">X</span>
+    </div>
 
-            <div id="contentContainer">
-            <section id="about">
-                <h2>About Me</h2>
-                <br>
-                <div id="aboutHorizontal">
-                <p>
-                    My name is Ivan Mitsov, and I am a gameplay programmer, with most of my experience being in Unity and C#, but also have basic knowledge in C++ and Web.<br>
-                    I have been interested in the creative industry since I was in highschool. Since then, I have dipped my toes in various subjects to try figure out what I like. <br>
-                    Started with drawing, 3D modeling, pixel art, graphic design, but in the end I found that I have a great passion for making games and making them fun. <br>
-                    That's why I decided to try to become a gameplay programmer.
-                </p>
-                <div class="decorations">
-                    <h6 hidden>Decoration images</h6>
-                    <img src="images/Gallery/CVPic.png" alt="Personal Photo">
-                    <!-- <br> -->
-                    <!-- <img src="images/Gallery/Golden%20Ratio.png" alt="Golden Ration"> -->
-                </div>
-            </div>
-            </section>
+    <aside class="social">
+      <h6 hidden>Social Icons</h6>
+      <nav>
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/vandim199"
+              ><img src="images/UI/GitHub.png" alt="GitHub Logo"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/Vandim199"
+              ><img src="images/UI/Twitter.png" alt="Twitter Logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ivan-mitsov-b3a715201/"
+              ><img src="images/UI/linkedin-logo.png" alt="LinkedIn Logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-            <section id="casino"  class="imageGalleries">
-                <h2>Unreal Engine Multiplayer Casino</h2>
-                <br>
-                <h3>Company project</h3>
-                <br>
-                <p>
-                    An Unreal Engine multiplayer game made to simulate a casino in a virtual world with social features.
-                    Developed at my internship at <b>Animajor - Sofia, Bulgaria</b>.
-                    <br>
-                    My responsibilities:
-                </p>
-                <br>
-                <p>
-                    <b>• Game Logic</b> - The logic of classic casino games to be implemented into the game.
-                    <br><b>• Multiplayer</b> - Every game had to be with multiple seats and work in multiplayer while everything is synchronized.
-                    <br><b>• API</b> - A backend had to be used to keep track of players' profiles and balance.
-                    <br><b>• UI</b> - Implementing all of the UI from Figma to Unreal.
-                    <br><b>• Motion Capture</b> - Setting up a mocap environment and suits and importing the animations and retargeting them.
-                    <br>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Baccarat</figcaption>
-                            <video width="200" height="150" controls>
-                            <source src="images/Gallery/videos/Media1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Blackjack</figcaption>
-                            <video width="200" height="150" controls>
-                            <source src="images/Gallery/videos/Media2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Roulette</figcaption>
-                            <video width="200" height="150" controls>
-                            <source src="images/Gallery/videos/Media3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>UI and Emote Wheel</figcaption>
-                            <video width="200" height="150" controls>
-                            <source src="images/Gallery/videos/Media4.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+    <!-- <main> -->
+    <h6 hidden>Main Page</h6>
 
+    <!-- <div id="contentContainer"> -->
+    <section id="about">
+      <img src="./images/Gallery/2024pic.jpg" />
+      <br />
+      <h2>About Me</h2>
+      <br />
+      <div id="aboutHorizontal">
+        <p>
+          My name is Ivan Mitsov and I am a gameplay programmer, working mostly
+          in Unity, C#, Unreal Engine and C++.<br />
+          <br /><br /><br /><br /><br />
+        </p>
+      </div>
 
-            <section id="car"  class="imageGalleries">
-                <h2>Car Simulation in Unity</h2>
-                <br>
-                <h3>Personal project</h3>
-                <br>
-                <p>
-                    A prototype of a car simulation made in the Unity engine
-                    aiming to use real life values to create and configure cars
-                    to be used in games.
-                </p>
-                <br>
-                <p>
-                    <b>• Suspension</b> - it keeps the car above the ground and responds to unevenness in the terrain. It is highly customizable and will work for any type of car, even monster trucks.
-                    <br><b>• Ackerman Steering</b> - I've implemented a technique for steering used in cars in real life in which the front wheels rotate by a different angle to accommodate for the difference between the distance to the turning circle center.
-                    <br><b>• Customizable engine</b> - the engine script has a graph in the inspector which allows me to input any engine properties and the code will adapt accordingly. It uses real life values for all calculations.
-                    <br><b>• Gears</b> - Added manual gear switching which also uses real values of the car's gearbox and it's gear ratios.
-                    <br><b>• Flexibility</b> - The code is well adapted and importing new cars involves dragging in a new model and adjusting it's numbers(engine, weight, gearbox)
-                    <br>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>First Person POV</figcaption>
-                            <img src="images/Gallery/pov.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Gear and engine torque settings</figcaption>
-                            <img src="images/Gallery/Graph.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Suspension moves the car up and down over rough terrain</figcaption>
-                            <img src="images/Gallery/Suspension.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Code for the engine</figcaption>
-                            <img src="images/Gallery/EngineCode.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Video</figcaption>
-                            <video width="150" height="150" controls>
-                            <source src="images/Gallery/Car.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+      <img id="arrow" src="images/Arrow.png" />
+    </section>
 
-            <section id="2dplatformer"  class="imageGalleries">
-                <h2>2D Platformer in Unity</h2>
-                <br>
-                <h3>Personal project</h3>
-                <br>
-                <p>
-                    A base project for future use which includes the most common features in platformer games.
-                </p>
-                <br>
-                <p>
-                    <b>• Custom acceleration and decceleration</b> - Custom physics calculations still using Unity's Physics System.
-                    <br><b>• Coyote Time</b> - Allows the player to jump shortly after leaving the platform.
-                    <br><b>• Jump Buffer</b> - If the player presses jump before landing it buffer it until the player touches the ground.
-                    <br><b>• Jump Curves</b> - Custom control over the gravity at any point of the jump.
-                    <br>
-                    <br>
-                    <a href="https://vandim.itch.io/platformer" style="color: #e63946; font-size: 3.5vh; text-decoration: underline;" target=”_blank”>Play In Browser</a>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Character shader elongates based on speed</figcaption>
-                            <img src="images/Gallery/platformer1.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Jump Curve</figcaption>
-                            <img src="images/Gallery/2dplatforercurves.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Character Variables</figcaption>
-                            <img src="images/Gallery/2dplatformervariables.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Code for horizontal movement</figcaption>
-                            <img src="images/Gallery/platformerruncode.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+    <section id="casino" class="imageGalleries">
+      <h2>Unreal Engine Multiplayer Casino</h2>
+      <br />
+      <h3>Company project</h3>
+      <br />
+      <p>
+        An Unreal Engine multiplayer game made to simulate a casino in a virtual
+        world with social features. Developed at my internship at
+        <b>Animajor - Sofia, Bulgaria</b>.
+        <br />
+        My responsibilities:
+      </p>
+      <br />
+      <p>
+        <b>• Game Logic</b> - The logic of classic casino games to be
+        implemented into the game. <br /><b>• Multiplayer</b> - Every game had
+        to be with multiple seats and work in multiplayer while everything is
+        synchronized. <br /><b>• API</b> - A backend had to be used to keep
+        track of players' profiles and balance. <br /><b>• UI</b> - Implementing
+        all of the UI from Figma to Unreal. <br /><b>• Motion Capture</b> -
+        Setting up a mocap environment and suits and importing the animations
+        and retargeting them.
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li class="video">
+          <figure>
+            <figcaption>Baccarat</figcaption>
+            <video width="400px" controls>
+              <source src="images/Gallery/videos/Media1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <figcaption>Blackjack</figcaption>
+            <video width="200" height="150" controls>
+              <source src="images/Gallery/videos/Media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <figcaption>Roulette</figcaption>
+            <video width="200" height="150" controls>
+              <source src="images/Gallery/videos/Media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <figcaption>UI and Emote Wheel</figcaption>
+            <video width="200" height="150" controls>
+              <source src="images/Gallery/videos/Media4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="produceabuse"  class="imageGalleries">
-                <h2>C++ RPG</h2>
-                <br>
-                <h3>Personal project</h3>
-                <br>
-                <p>
-                    Produce Abuse is a small turn-based game inspired by Pokémon made with C++ and SFML. It's made with OOP in
-                    mind and characters' data is read from text files. It has a simple AI and high scores. Code structure is
-                    based on custom GameObject class I made, which is meant to be similar to Unity's, because that's what I'm
-                    most familiar with.
-                </p>
-                <br>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Title Screen</figcaption>
-                            <img src="images/Gallery/Produce Abuse/Title Screen.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Character and Difficulty Select</figcaption>
-                            <img src="images/Gallery/Produce Abuse/Character Select.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Gameplay</figcaption>
-                            <img src="images/Gallery/Produce Abuse/Gameplay.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>High Scores</figcaption>
-                            <img src="images/Gallery/Produce Abuse/High Scores.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+    <section id="car" class="imageGalleries">
+      <h2>Car Simulation in Unity</h2>
+      <br />
+      <h3>Personal project</h3>
+      <br />
+      <p>
+        A prototype of a car simulation made in the Unity engine aiming to use
+        real life values to create and configure cars to be used in games.
+      </p>
+      <br />
+      <p>
+        <b>• Suspension</b> - it keeps the car above the ground and responds to
+        unevenness in the terrain. It is highly customizable and will work for
+        any type of car, even monster trucks. <br /><b>• Ackerman Steering</b> -
+        I've implemented a technique for steering used in cars in real life in
+        which the front wheels rotate by a different angle to accommodate for
+        the difference between the distance to the turning circle center.
+        <br /><b>• Customizable engine</b> - the engine script has a graph in
+        the inspector which allows me to input any engine properties and the
+        code will adapt accordingly. It uses real life values for all
+        calculations. <br /><b>• Gears</b> - Added manual gear switching which
+        also uses real values of the car's gearbox and it's gear ratios.
+        <br /><b>• Flexibility</b> - The code is well adapted and importing new
+        cars involves dragging in a new model and adjusting it's numbers(engine,
+        weight, gearbox)
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>First Person POV</figcaption>
+            <img src="images/Gallery/pov.png" onclick="openImg(this.src)" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Gear and engine torque settings</figcaption>
+            <img src="images/Gallery/Graph.png" onclick="openImg(this.src)" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>
+              Suspension moves the car up and down over rough terrain
+            </figcaption>
+            <img
+              src="images/Gallery/Suspension.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Code for the engine</figcaption>
+            <img
+              src="images/Gallery/EngineCode.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <figcaption>Video</figcaption>
+            <video width="150" height="150" controls>
+              <source src="images/Gallery/Car.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="bleached"  class="imageGalleries">
-                <h2>Bleached</h2>
-                <br>
-                <h3>Group project</h3>
-                <br>
-                <p>
-                    A prototype of a rouguelike made in 3 weeks in Unity by 6 people.
-                </p>
-                <br>
-                <p>
-                    <b>My contributions:</b>
-                </p>
-                <br>
-                <p>
-                    <b>• Gameplay</b> - I developed the movement to feel good and responsive, including some vector calculations to take the isometric perspective into account.
-                    <br><b>• Rolling</b> - Using raycasts I made it so you can roll through specific objects and testing if there's an obstacle on the other side and prevented clipping into walls.
-                    <br><b>• Shaders</b> - All of the shaders - grass, bushes and see-through material.
-                    <br><b>• Random level sequence generation</b>
-                    <br><b>• Saving/Loading</b>.
-                    <br><b>• UI, Pause screen, other misc.</b>
-                    <br>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Bleached Cover</figcaption>
-                            <img src="images/Gallery/banner.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Starting Area</figcaption>
-                            <img src="images/Gallery/bleachedStarting.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Inside building</figcaption>
-                            <img src="images/Gallery/seethrough.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Raycast for dodging through objects</figcaption>
-                            <img src="images/Gallery/RaycastDodge.gif" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+    <section id="thechair" class="imageGalleries">
+      <h2>The Chair</h2>
+      <br />
+      <h3>Group project</h3>
+      <br />
+      <p>A VR seated horror experience in Unreal Engine.</p>
+      <br />
+      <p>
+        <b>• Scripting</b> - I implemented tools to help artists easily add
+        sounds and effects at a specified time and a function to wait until the
+        player is looking towards the action before playing key animations.
+        <br />
+        <b>• Graphics</b> - I was in charge of post-processing to make sure I
+        set the correct mood and lighting while keeping in mind the performance.
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li class="video">
+          <figure>
+            <figcaption>Trailer</figcaption>
+            <video width="150" height="150" controls>
+              <source
+                src="images/Gallery/videos/Trailer_TheChair.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Look Function</figcaption>
+            <img
+              src="images/Gallery/LookScript.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="plasticTide"  class="imageGalleries">
-                <h2>Plastic Tide</h2>
-                <br>
-                <h3>Group project</h3>
-                <br>
-                <p>
-                    A prototype of a rouguelike made in 3 weeks in Unity by 6 people.
-                </p>
-                <br>
-                <p>
-                    <b>My contributions:</b>
-                </p>
-                <br>
-                <p>
-                    <b>• Gameplay</b> - I programmed boat controls for all types of controllers, using exponential graphs for turning to make it more fun to play.
-                    <br><b>• Fishing Minigame</b> - Including probabilty sliders and other designer tools.
-                    <br><b>• Menus</b> - Sound options, tutorials, main menu.
-                    <br><b>• Shaders</b> - Water shader re-used from Shader Personal Portfolio, but I cartoon-ified it.
-                    <br>
-                    <br>
-                    <a href="https://vandim.itch.io/plastic-tide">Itch io page</a>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Level 1</figcaption>
-                            <img src="images/Gallery/PlasticTide1.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Level 2</figcaption>
-                            <img src="images/Gallery/PlasticTide2.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Fishing Minigame</figcaption>
-                            <img src="images/Gallery/Fishing.gif" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Water Shader</figcaption>
-                            <img src="images/Gallery/water shader 5.gif" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Youtube Trailer</figcaption>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_eoKlNaL5Ss" title="YouTube video player" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </figure>
-                    </li>
-                </ul>
-                
-            </section>
+    <section id="2dplatformer" class="imageGalleries">
+      <h2>2D Platformer in Unity</h2>
+      <br />
+      <h3>Personal project</h3>
+      <br />
+      <p>
+        A base project for future use which includes the most common features in
+        platformer games.
+      </p>
+      <br />
+      <p>
+        <b>• Custom acceleration and decceleration</b> - Custom physics
+        calculations still using Unity's Physics System. <br /><b
+          >• Coyote Time</b
+        >
+        - Allows the player to jump shortly after leaving the platform. <br /><b
+          >• Jump Buffer</b
+        >
+        - If the player presses jump before landing it buffer it until the
+        player touches the ground. <br /><b>• Jump Curves</b> - Custom control
+        over the gravity at any point of the jump.
+        <br />
+        <br />
+        <a href="https://vandim.itch.io/platformer" target="”_blank”"
+          >Play In Browser</a
+        >
+        <br />
+      </p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Character shader elongates based on speed</figcaption>
+            <img
+              src="images/Gallery/platformer1.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Jump Curve</figcaption>
+            <img
+              src="images/Gallery/2dplatforercurves.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Character Variables</figcaption>
+            <img
+              src="images/Gallery/2dplatformervariables.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Code for horizontal movement</figcaption>
+            <img
+              src="images/Gallery/platformerruncode.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="shaders"  class="imageGalleries">
-                <h2>Shader experimentation</h2>
-                <br>
-                <h3>Personal project</h3>
-                <br>
-                <p>
-                    I wanted to experiment with shaders and learn something new with each of them so I created a few to learn a new technique with each of them. I set up a Unity scene 
-                    and decided to make a MOBA-type character controller, so I can have more freedom in the theme of things.
-                </p>
-                <br>
-                <p>
-                    <b>• Outline shader</b> - By expanding the mesh I found I can achieve a somewhat good outline effect.
-                    <br><b>• Shield shader</b> - Experimanting with UVs, time, transparency and emission I created a shield effect.
-                    <br><b>• Grass shader</b> - A shader which uses time to displace the top o the grass blades to make it look like wind blows, 
-                    and using the player's position to move them apart when he's passing through.
-                    <br><b>• Portal shader</b> - Learning about Unity's depth texture and distortion I made a swirling portal.
-                    <br><b>• Water shader</b> - Using gerstner waves I managed to make a somewhat realistic water shader and combining the portal distorion in it.
-                    <br>
-                    <br>
-                </p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Outline with and without emission and shield</figcaption>
-                            <img src="images/Gallery/OutlineAndShield.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Grass Shader</figcaption>
-                            <img src="images/Gallery/GrassShader.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Water shader with normals for sun reflection</figcaption>
-                            <img src="images/Gallery/WaterShader.jpg" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Water Foam</figcaption>
-                            <img src="images/Gallery/WaterFoam.png" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <video width="150" height="150" controls>
-                                <source src="images/Gallery/Shaders PersonalPortfolio.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                        </figure>
-                    </li>
-                </ul>
-                
-            </section>
+    <section id="produceabuse" class="imageGalleries">
+      <h2>C++ RPG</h2>
+      <br />
+      <h3>Personal project</h3>
+      <br />
+      <p>
+        Produce Abuse is a small turn-based game inspired by Pokémon made with
+        C++ and SFML. It's made with OOP in mind and characters' data is read
+        from text files. It has a simple AI and high scores. Code structure is
+        based on custom GameObject class I made, which is meant to be similar to
+        Unity's, because that's what I'm most familiar with.
+      </p>
+      <br />
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Title Screen</figcaption>
+            <img
+              src="images/Gallery/Produce Abuse/Title Screen.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Character and Difficulty Select</figcaption>
+            <img
+              src="images/Gallery/Produce Abuse/Character Select.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Gameplay</figcaption>
+            <img
+              src="images/Gallery/Produce Abuse/Gameplay.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>High Scores</figcaption>
+            <img
+              src="images/Gallery/Produce Abuse/High Scores.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="ragdolls"  class="imageGalleries">
-                <h2>Active Ragdoll Experimentation</h2>
-                <br>
-                <h3>Personal project</h3>
-                <br>
-                <p>
-                    My goal was to learn about procedural animation by making a ragdoll which can play animations.<br>
-                    My inspirations were Gang Beasts and Human Fall Flat.
-                </p>
-                <br>
-                <p>
-                    <b>• Inverse Kinematics</b> - Using a basic setup I am setting the IK goal's position to where the raycast hits.
-                    <br><b>• Automatic Stepping</b> - After the leg's goal gets too far away from the body I move it to the opposite side and lerp the position with a sine wave.
-                    <br><b>• Ragdoll</b> - The character is set up with a collision and RigidBody on each bone and a configurable joint connecting them all. <br>
-                    The joint also has the spring force enabled to try to adjust the rotation to the default pose.
-                    <br><b>• Copy Animation</b> - By setting the target rotation of the joints to be the same as those of an animated copy of the character, the ragdoll should be copying the desired animations.
-                    <br>
-                    <br>
-                </p>
-                <ul>
-                    
-                    <li>
-                        <figure>
-                            <video width="150" height="150" controls>
-                                <source src="images/Gallery/PP3 InverseKinematics.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <video width="150" height="150" controls>
-                                <source src="images/Gallery/PP3 MotionCopyAir.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <video width="150" height="150" controls>
-                                <source src="images/Gallery/PP3 MotionCopyWalk.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                        </figure>
-                    </li>
-                </ul>
-                
-            </section>
+    <section id="bleached" class="imageGalleries">
+      <h2>Bleached</h2>
+      <br />
+      <h3>Group project</h3>
+      <br />
+      <p>A prototype of a rouguelike made in 3 weeks in Unity by 6 people.</p>
+      <br />
+      <p>
+        <b>My contributions:</b>
+      </p>
+      <br />
+      <p>
+        <b>• Gameplay</b> - I developed the movement to feel good and
+        responsive, including some vector calculations to take the isometric
+        perspective into account. <br /><b>• Rolling</b> - Using raycasts I made
+        it so you can roll through specific objects and testing if there's an
+        obstacle on the other side and prevented clipping into walls. <br /><b
+          >• Shaders</b
+        >
+        - All of the shaders - grass, bushes and see-through material. <br /><b
+          >• Random level sequence generation</b
+        >
+        <br /><b>• Saving/Loading</b>. <br /><b
+          >• UI, Pause screen, other misc.</b
+        >
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Bleached Cover</figcaption>
+            <img src="images/Gallery/banner.png" onclick="openImg(this.src)" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Starting Area</figcaption>
+            <img
+              src="images/Gallery/bleachedStarting.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Inside building</figcaption>
+            <img
+              src="images/Gallery/seethrough.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Raycast for dodging through objects</figcaption>
+            <img
+              src="images/Gallery/RaycastDodge.gif"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <section id="games"  class="imageGalleries">
-                <h2>Other Games</h2>
-                <br>
-                <h3>Other games I've made all by myself inclduing all assets</h3>
-                <br>
-                <p>3D platformer in Unity</p>
-                <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Slime Game - Canal</figcaption>
-                            <img src="images/Gallery/Screenshot_124.png" alt="Slime Game Screenshot 1" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Slime Game - Sewers</figcaption>
-                            <img src="images/Gallery/Screenshot_125.png" alt="Slime Game Screenshot 1" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    </ul>
-                    <br>
-                    <p>Binding of Isaac style game in C#, with random level layout</p>
-                    <ul>
-                    <li>
-                        <figure>
-                            <figcaption>Exos Faira - Main Menu</figcaption>
-                            <img src="images/Gallery/Screenshot_126.png" alt="Exos Faira Screenshot 1" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <figcaption>Exos Faira - Gameplay</figcaption>
-                            <img src="images/Gallery/Screenshot_127.png" alt="Exos Faira Screenshot 2" onclick="openImg(this.src)">
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+    <section id="plasticTide" class="imageGalleries">
+      <h2>Plastic Tide</h2>
+      <br />
+      <h3>Group project</h3>
+      <br />
+      <p>A prototype of a rouguelike made in 3 weeks in Unity by 6 people.</p>
+      <br />
+      <p>
+        <b>My contributions:</b>
+      </p>
+      <br />
+      <p>
+        <b>• Gameplay</b> - I programmed boat controls for all types of
+        controllers, using exponential graphs for turning to make it more fun to
+        play. <br /><b>• Fishing Minigame</b> - Including probabilty sliders and
+        other designer tools. <br /><b>• Menus</b> - Sound options, tutorials,
+        main menu. <br /><b>• Shaders</b> - Water shader re-used from Shader
+        Personal Portfolio, but I cartoon-ified it.
+        <br />
+        <br />
+        <a href="https://vandim.itch.io/plastic-tide">Itch io page</a>
+        <br />
+      </p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Level 1</figcaption>
+            <img
+              src="images/Gallery/PlasticTide1.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Level 2</figcaption>
+            <img
+              src="images/Gallery/PlasticTide2.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Fishing Minigame</figcaption>
+            <img src="images/Gallery/Fishing.gif" onclick="openImg(this.src)" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Water Shader</figcaption>
+            <img
+              src="images/Gallery/water shader 5.gif"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <figcaption>Youtube Trailer</figcaption>
+            <iframe
+              width="560"
+              src="https://www.youtube.com/embed/_eoKlNaL5Ss"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
+    <section id="shaders" class="imageGalleries">
+      <h2>Shader experimentation</h2>
+      <br />
+      <h3>Personal project</h3>
+      <br />
+      <p>
+        I wanted to experiment with shaders and learn something new with each of
+        them so I created a few to learn a new technique with each of them. I
+        set up a Unity scene and decided to make a MOBA-type character
+        controller, so I can have more freedom in the theme of things.
+      </p>
+      <br />
+      <p>
+        <b>• Outline shader</b> - By expanding the mesh I found I can achieve a
+        somewhat good outline effect. <br /><b>• Shield shader</b> -
+        Experimanting with UVs, time, transparency and emission I created a
+        shield effect. <br /><b>• Grass shader</b> - A shader which uses time to
+        displace the top o the grass blades to make it look like wind blows, and
+        using the player's position to move them apart when he's passing
+        through. <br /><b>• Portal shader</b> - Learning about Unity's depth
+        texture and distortion I made a swirling portal. <br /><b
+          >• Water shader</b
+        >
+        - Using gerstner waves I managed to make a somewhat realistic water
+        shader and combining the portal distorion in it.
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>
+              Outline with and without emission and shield
+            </figcaption>
+            <img
+              src="images/Gallery/OutlineAndShield.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Grass Shader</figcaption>
+            <img
+              src="images/Gallery/GrassShader.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>
+              Water shader with normals for sun reflection
+            </figcaption>
+            <img
+              src="images/Gallery/WaterShader.jpg"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Water Foam</figcaption>
+            <img
+              src="images/Gallery/WaterFoam.png"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <video width="150" height="150" controls>
+              <source
+                src="images/Gallery/Shaders PersonalPortfolio.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-            <!-- <section id="gallery" class="imageGalleries">
+    <section id="ragdolls" class="imageGalleries">
+      <h2>Active Ragdoll Experimentation</h2>
+      <br />
+      <h3>Personal project</h3>
+      <br />
+      <p>
+        My goal was to learn about procedural animation by making a ragdoll
+        which can play animations.<br />
+        My inspirations were Gang Beasts and Human Fall Flat.
+      </p>
+      <br />
+      <p>
+        <b>• Inverse Kinematics</b> - Using a basic setup I am setting the IK
+        goal's position to where the raycast hits. <br /><b
+          >• Automatic Stepping</b
+        >
+        - After the leg's goal gets too far away from the body I move it to the
+        opposite side and lerp the position with a sine wave. <br /><b
+          >• Ragdoll</b
+        >
+        - The character is set up with a collision and RigidBody on each bone
+        and a configurable joint connecting them all. <br />
+        The joint also has the spring force enabled to try to adjust the
+        rotation to the default pose.
+        <br /><b>• Copy Animation</b> - By setting the target rotation of the
+        joints to be the same as those of an animated copy of the character, the
+        ragdoll should be copying the desired animations.
+        <br />
+        <br />
+      </p>
+      <ul>
+        <li class="video">
+          <figure>
+            <video width="150" height="150" controls>
+              <source
+                src="images/Gallery/PP3 InverseKinematics.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <video width="150" height="150" controls>
+              <source
+                src="images/Gallery/PP3 MotionCopyAir.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+        <li class="video">
+          <figure>
+            <video width="150" height="150" controls>
+              <source
+                src="images/Gallery/PP3 MotionCopyWalk.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section id="games" class="imageGalleries">
+      <h2>Other Games</h2>
+      <br />
+      <h3>Other games I've made all by myself inclduing all assets</h3>
+      <br />
+      <p>3D platformer in Unity</p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Slime Game - Canal</figcaption>
+            <img
+              src="images/Gallery/Screenshot_124.png"
+              alt="Slime Game Screenshot 1"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Slime Game - Sewers</figcaption>
+            <img
+              src="images/Gallery/Screenshot_125.png"
+              alt="Slime Game Screenshot 1"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+      <br />
+      <p>Binding of Isaac style game in C#, with random level layout</p>
+      <ul>
+        <li>
+          <figure>
+            <figcaption>Exos Faira - Main Menu</figcaption>
+            <img
+              src="images/Gallery/Screenshot_126.png"
+              alt="Exos Faira Screenshot 1"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figcaption>Exos Faira - Gameplay</figcaption>
+            <img
+              src="images/Gallery/Screenshot_127.png"
+              alt="Exos Faira Screenshot 2"
+              onclick="openImg(this.src)"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!-- <section id="gallery" class="imageGalleries">
                 <h2>Logo Gallery</h2>
                 <ul>
                     <li>
@@ -570,9 +779,9 @@
                     </li>
                 </ul>
             </section> -->
-            </div>
-            
-            <div id="sidelinks">
+    <!-- </div> -->
+
+    <!-- <div id="sidelinks">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#casino">Unreal Engine</a></li>
@@ -585,12 +794,11 @@
                     <li><a href="#ragdolls">Active Ragdolls</a></li>
                     <li><a href="#games">Other Games</a></li>
                 </ul>
-            </div>
-        </main>
+            </div> -->
+    <!-- </main> -->
 
-        <!-- <aside> -->
-            
-        <!-- </aside> -->
+    <!-- <aside> -->
 
-    </body>
+    <!-- </aside> -->
+  </body>
 </html>
