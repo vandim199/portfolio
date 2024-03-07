@@ -191,7 +191,11 @@
         can calculate that the hourly rate is 28.36€. Considering that the work that I did for the project took 2
         full-time months, but I needed to be available for technical problems throughout the period of the project I
         would
-        estimate my services would cost around 11000€ or 9000€ if it were only for the 2 months.
+        estimate my services would cost around 11000€ or 9000€ if it were only for the 2 months. I imagine that this
+        cost will not be affordable for the client and it will not be worth it and a much better option would be to be
+        hired as a freelancer for around 2-3000€ to program the aforementioned features and setup all technical aspects
+        in the beginning, without the involvement in the ideating, concepting and designing phases of the project. This
+        would bring a similar benefit to the client at a lower cost.
       </p>
       <h2>Personal Learning Goals</h2>
       <p>
@@ -215,7 +219,7 @@
         didn't
         need any of my help so I couldn't tie my learning goals with the any of the IMT&S projects. I didn't have a
         choice
-        apart from working on my own towards my goal, incorporating a project-based learning. This is also one of the
+        apart from working on my own towards my goal, incorporating a project-based learning by using the Practical-Deepening process by Miriam Losse. This is also one of the
         reasons I ended up including front-end in my goals - because the game would have served as the front-end, which
         would make RESTful API calls to the database server that would return the list of users and their scores.
         <br><br>
@@ -255,8 +259,8 @@
         Afterwards I looked up some inspiration for beginner projects.
         First idea was a quiz website like Kahoot. I followed a <a
           href="https://youtu.be/riDzcEQbX6k?si=jM8pwAb9ox9_92oA">video tutorial</a> to write the JavaScript of the
-        project and modified accordingly. You can check it out <a target="_blank"
-          href="./carhoot-main/index.html">Here</a></p>
+        project and modified accordingly. It helped me learn how to add new elements at runtime in vanilla JavaScript.
+        You can take the quiz <a target="_blank" href="./carhoot-main/index.html">here</a></p>
       <ul>
         <li>
           <img src="images/Gallery/Carhoot2.png" onclick="openImg(this.src)" />
@@ -292,7 +296,8 @@
       </ul>
       <p>
         After that, I began research on what modern websites most commonly use, and my findings pointed to the MERN tech
-        stack (Thomas, 2024). MERN stands for MongoDB, Express, React and Node.js. It is most commonly used to make single-page web
+        stack (Thomas, 2024). MERN stands for MongoDB, Express, React and Node.js. It is most commonly used to make
+        single-page web
         apps. With that in mind I came up with a project idea to develop to learn everything needed. The project I
         decided upon was a single-page album website that functions similarly to most e-commerce websites. What I mean
         by that is that the website would contain a collection of memorable images, videos and quotes from me and my
@@ -313,8 +318,15 @@
         search the database for items that meet the filters. Using a password my friends would also be able to upload
         content on the website and tag it accordingly all through the website. With this plan in mind, I started
         watching video tutorials to familiarize myself with the tools. After a bit of time, I successfully set up the
-        database and added my first test items. Next was the server - at first all it could do is send an HTML file with
-        a “Hello World” written on it. I installed the React library with Vite, which packages all of the files (HTML,
+        database with the help of an <a target="_blank" href="https://www.youtube.com/watch?v=Cz3WcZLRaWc">introductory
+          tutorial</a> and added my first test items. ) and inserted a few entries into the table. I didn't know
+        anything about Node.js, so I needed to research what it is and how it works, for which I used <a target="_blank"
+          href="https://www.youtube.com/watch?v=ENrzD9HAZK4">this</a> and <a target="_blank"
+          href="https://www.youtube.com/watch?v=Hej48pi_lOc">this</a> video. It sends the default HTML
+        file
+        which has a
+        “Hello World” written on it. I installed the React library with Vite with the help of a video tutorial
+        (DanCanCode, 2022), which packages all of the files(HTML,
         CSS, JavaScript and React jsx) to reduce traffic and improve speeds. I created a simple UI for the moment and
         made the element which would contain media items. Here it is with manually added elements:
       </p>
@@ -335,11 +347,18 @@
       <br><br>
       <p>When the page is opened, it triggers a function on the server that makes a query to the database and sends the
         information back to the client and parses them into an array, which creates a MediaContainer element for each of
-        the received items. This whole process happens asynchronously because it takes a moment for the API to respond
+        the received items. To solve this I followed a <a target="_blank"
+          href="https://www.youtube.com/watch?v=sa7-AsTRXec">tutorial</a> which helped me understand how to
+        fetch the data correctly This whole process happens asynchronously because it takes a moment for the API to
+        respond
         and this ensures that the website isn't frozen while loading or that the page isn't getting completely
         refreshed. When the array is updated it soft-refreshes the affected elements, without losing input data, scroll
-        position or other properties which is very important for user experience. Here is a video of it getting a random
-        image:
+        position or other properties which is very important for user experience. Unfortunately, I couldn't successfully
+        get the page to refresh so I needed to research how exactly does React refresh elements and found out that the
+        most common method is UseState (React Reference Overview - React, n.d., Web Dev Simplified, 2020). From the
+        video tutorial I found that by using this method whenever I update an important variable (like the list of
+        images) it will automatically refresh all elements that are related to that variable. Here is a video of it
+        getting a random image:
       </p>
       <ul>
         <li class="video">
@@ -357,7 +376,8 @@
       <br><br>
       <p>After that I created filtering buttons to filter through the results, by querying the parameters to the
         database
-        and repeats the above process.
+        and repeats the above process. For this I also used the newly learned UseState hook to update the page and send
+        a new query upon enabling or disabling a filter.
       </p>
       <ul>
         <li class="video">
@@ -376,8 +396,8 @@
       <p>This personal project took the remaining 1.5 months to make, but unfortunately I ran out of time so I couldn't
         complete everything I wanted to add. But I plan on finishing it up in the future by improving the UI and adding
         uploading directly from the site, because the way I do it now is by adding the image to the folder and manually
-        inserting a new entry into the database. It is not running online currently, because it requires a server, but you can see the code <a target="_blank"
-        href="https://github.com/vandim199/album-website">here</a>.
+        inserting a new entry into the database. It is not running online currently, because it requires a server, but
+        you can see the code <a target="_blank" href="https://github.com/vandim199/album-website">here</a>.
       </p>
       <h2>Sources</h2>
       <p>CyberWolves. (2022, June 20). Implement search, sort, filter and pagination REST API with Node JS | Express |
@@ -417,7 +437,9 @@
         <br><br>Programming
         with Mosh. (2023, March 12). React tutorial for beginners [Video]. YouTube.
         <a target="_blank"
-          href="https://www.youtube.com/watch?v=SqcY0GlETPk">https://www.youtube.com/watch?v=SqcY0GlETPk</a> <br><br>Sam
+          href="https://www.youtube.com/watch?v=SqcY0GlETPk">https://www.youtube.com/watch?v=SqcY0GlETPk</a>
+        <br><br>React Reference Overview - React. (n.d.).
+        <a target="_blank" href="https://react.dev/reference/react">https://react.dev/reference/react</a> <br><br>Sam
         Meech-Ward. (2022, June 16). MySQL Node.js Express [Video].
         YouTube. <a target="_blank"
           href="https://www.youtube.com/watch?v=Hej48pi_lOc">https://www.youtube.com/watch?v=Hej48pi_lOc</a>
