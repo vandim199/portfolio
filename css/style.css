@@ -293,8 +293,8 @@ h2 {
 
 video {
   /* min-width: 100%; */
-  width: 100% !important;
-  height: auto !important;
+  /* width: 100% !important; */
+  /* height: auto !important; */
 }
 iframe {
   width: 100% !important;
